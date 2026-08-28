@@ -1,0 +1,40 @@
+---
+import Social from '@/components/Social.astro';
+
+import FacebookIcon from '@/assets/svg/facebook.svg';
+import InstagramIcon from '@/assets/svg/instagram.svg';
+import TiktokIcon from '@/assets/svg/tiktok.svg';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  class='bg-footer mx-auto flex w-full flex-col items-center justify-center gap-4 px-5 py-30 text-center text-sm'
+>
+  <div class='flex flex-col items-center gap-2'>
+    <span class='text-primary text-2xl font-bold'>Arquitectura Energética</span>
+    <span class='text-primary text-base'
+      >Innovación solar para un futuro sostenible</span
+    >
+  </div>
+
+  <div class='flex flex-row items-center justify-center gap-4'>
+    <Social href='https://www.instagram.com/arquitecturaenergetica'>
+      <FacebookIcon />
+    </Social>
+    <Social
+      href='https://www.facebook.com/people/Arquitectura-Energ%C3%A9tica/61573842470123/'
+    >
+      <TiktokIcon />
+    </Social>
+    <Social href='https://www.tiktok.com/'>
+      <InstagramIcon />
+    </Social>
+  </div>
+  <p class='flex flex-col'>
+    <span class='text-primary text-sm'>
+      © {currentYear} Arquitectura Energética.
+    </span>
+    <span class='text-primary text-sm'> Todos los derechos reservados. </span>
+  </p>
+</footer>

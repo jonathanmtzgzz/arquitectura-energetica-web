@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@import 'tailwind-animations';
+
+
+@theme {
+  --color-primary: #064E3B;
+  --color-secondary: #FEF3C7;
+  --color-tertiary: #D1FAE5;
+  --color-neutral: #111827;
+  --color-footer: #DCE2F7
+  --color-white: #FFFFFF;
+}
