@@ -1,0 +1,28 @@
+---
+import ReviewCard from '@/components/ReviewCard.astro';
+---
+
+<section class='flex flex-col items-center justify-center py-30'>
+  <div class='flex w-87.5 flex-col items-center justify-center gap-8 px-5'>
+    <h2 class='text-primary text-base leading-6 tracking-[-0.4px] uppercase'>
+      Instalaciones
+    </h2>
+    <div class='flex flex-col gap-6'>
+      <ReviewCard
+        rating='⭐⭐⭐⭐'
+        review='"Excelente servicio, reduje mi recibo a $50 pesos. Recomendados"'
+        reviewer='Familia Gonzalez, Guadalupe'
+      />
+      <ReviewCard
+        rating='⭐⭐⭐⭐⭐'
+        review='"Instalación muuy limpia, y profesional. El trámite con CFE fue sin problemas."'
+        reviewer='Familia Martinez, Guadalupe'
+      />
+      <ReviewCard
+        rating='⭐⭐⭐⭐⭐'
+        review='"La mejor inversión. El equipo resolvio todas mis dudas y el sistema funciona perfecto."'
+        reviewer='Familia Carrizales, Guadalupe'
+      />
+    </div>
+  </div>
+</section>

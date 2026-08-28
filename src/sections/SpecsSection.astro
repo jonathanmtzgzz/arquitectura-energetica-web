@@ -1,0 +1,36 @@
+---
+import SolarPanelIcon from '@/assets/svg/solar-panel.svg';
+import GridViewIcon from '@/assets/svg/grid-view.svg';
+import ElectricBoltIcon from '@/assets/svg/electric-bolt.svg';
+import SpecCard from '@/components/SpecCard.astro';
+---
+
+<section class='flex flex-col items-center justify-center py-30'>
+  <div class='flex flex-col gap-8 px-5'>
+    <h2
+      class='text-primary text-center text-base leading-6 tracking-[-0.4px] uppercase'
+    >
+      Especificaciones y Calidad
+    </h2>
+    <div class='flex w-87.5 flex-col gap-6 text-center'>
+      <SpecCard
+        title='Sistema Premium'
+        details='Sistema fotovoltaico gama premium diseñado para máxima eficiencia.'
+      >
+        <SolarPanelIcon slot='icon' />
+      </SpecCard>
+      <SpecCard
+        title='Paneles Bifaciales'
+        details='Canadian Solar 645 W, capturando energía por ambos lados.'
+      >
+        <GridViewIcon slot='icon' />
+      </SpecCard>
+      <SpecCard
+        title='Inversor Híbrido'
+        details='Inversor híbrido para gestión inteligente de la energía.'
+      >
+        <ElectricBoltIcon slot='icon' />
+      </SpecCard>
+    </div>
+  </div>
+</section>

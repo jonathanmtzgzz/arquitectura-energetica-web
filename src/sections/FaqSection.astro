@@ -1,0 +1,25 @@
+---
+import Accordion from '@/components/Accordion.astro';
+---
+
+<section class='bg-[#FCF9F8] py-30'>
+  <div class='flex flex-col items-center justify-center gap-8 px-5'>
+    <h2 class='text-primary text-base leading-6 tracking-[-0.4px] uppercase'>
+      Preguntas Frecuentes
+    </h2>
+    <div class='flex flex-col gap-4'>
+      <Accordion
+        title='¿Qué es la arquitectura energética?'
+        details='La arquitectura energética es un enfoque de diseño arquitectónico que busca optimizar el uso de la energía en los edificios y estructuras. Se centra en la eficiencia energética, la sostenibilidad y la reducción del impacto ambiental mediante el uso de tecnologías y estrategias innovadoras.'
+      />
+      <Accordion
+        title='¿Cuáles son los beneficios de la arquitectura energética?'
+        details='Los beneficios de la arquitectura energética incluyen la reducción del consumo de energía, la disminución de costos operativos, la mejora del confort interior, la contribución a la sostenibilidad ambiental y el cumplimiento de normativas energéticas.'
+      />
+      <Accordion
+        title='¿Qué técnicas se utilizan en la arquitectura energética?'
+        details='Algunas técnicas utilizadas en la arquitectura energética incluyen el diseño pasivo, el uso de materiales eficientes, la integración de energías renovables, el aislamiento térmico, la ventilación natural y el control inteligente de sistemas energéticos.'
+      />
+    </div>
+  </div>
+</section>

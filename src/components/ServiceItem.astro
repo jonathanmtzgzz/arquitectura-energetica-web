@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+---
+
+<div class='flex h-87 w-92 flex-col gap-3 rounded-4xl bg-white p-8'>
+  <div
+    class='flex h-16 w-16 items-center justify-center rounded-full bg-[#E1E8FD]'
+  >
+    <slot class='' name='icon' />
+  </div>
+  <h3 class='text-primary text-2xl font-semibold'>{Astro.props.title}</h3>
+  <p class='text-base'>{Astro.props.description}</p>
+</div>

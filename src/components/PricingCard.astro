@@ -1,0 +1,87 @@
+---
+import CheckMarkIcon from '@/assets/svg/check-mark.svg';
+
+interface Props {
+  panelCount: string;
+  receiptRange: string;
+  price: string;
+  cashPrice: string;
+  features: string[];
+  popular?: boolean;
+}
+
+const {
+  panelCount,
+  receiptRange,
+  price,
+  cashPrice,
+  features,
+  popular = false,
+} = Astro.props;
+---
+
+<article
+  class={`flex w-87.5 flex-col rounded-sm border border-solid border-[#DBDBDB] shadow-lg timeline-view animate-zoom-in animate-range-rapid ${
+    popular ? 'bg-[#074A39]' : 'bg-white'
+  }`}
+>
+  <div class='flex h-48 items-center justify-center'>image</div>
+
+  <div class='gap-3 p-8'>
+    <div class='pb-6'>
+      <h3
+        class={`text-2xl leading-8 font-bold pb-1 ${popular ? 'text-white' : 'text-primary'}`}
+      >
+        Sistema de {panelCount} Paneles
+      </h3>
+      <p
+        class={`text-base leading-6 ${popular ? 'text-white/80' : 'text-[#5D5F5F]'}`}
+      >
+        Ideal para recibos de {receiptRange}
+      </p>
+    </div>
+
+    <div class='pb-6'>
+      <p
+        class={`text-2xl leading-8 font-extrabold pb-1 ${popular ? 'text-white' : 'text-primary'}`}
+      >
+        Desde ${price} al mes
+      </p>
+      <p
+        class={`text-base leading-6 ${popular ? 'text-white/70' : 'text-[#5D5F5F]/70'}`}
+      >
+        Precio de contado: ${cashPrice}
+      </p>
+    </div>
+
+    <div class='flex flex-col gap-3 pb-8'>
+      {
+        features.map((feature) => (
+          <div class='flex flex-row items-center justify-start gap-x-2'>
+            <span>
+              <CheckMarkIcon
+                class={popular ? 'text-white' : 'text-[#074a39]'}
+              />
+            </span>
+            <p
+              class={`text-base leading-6 ${popular ? 'text-white' : 'text-black'}`}
+            >
+              {feature}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+
+    <a
+      class={`flex flex-col items-center justify-center rounded-xl border border-solid py-4 text-center text-base leading-6 transition-colors ${
+        popular
+          ? 'border-white bg-white text-primary hover:bg-transparent hover:text-white'
+          : 'border-primary text-primary hover:bg-primary bg-white hover:border-white hover:text-white'
+      }`}
+      href=''
+    >
+      Cotizar Paquete
+    </a>
+  </div>
+</article>

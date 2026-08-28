@@ -1,0 +1,72 @@
+---
+import CheckMarkIcon from '@/assets/svg/check-mark.svg';
+import PricingCard from '@/components/PricingCard.astro';
+---
+
+<section class='bg-white py-30'>
+  <div class='flex flex-col items-center gap-5 px-5'>
+    <h2
+      class='text-primary flex flex-col items-center justify-center text-base leading-6 uppercase'
+    >
+      Planes y Financiamiento
+    </h2>
+    <div class='flex flex-col gap-8 pt-4'>
+      <PricingCard
+        panelCount={'4'}
+        receiptRange='$1,500 - $2,500'
+        price={'4,313'}
+        cashPrice={'45,000.00'}
+        features={[
+          'Paneles bifaciales de 645 W',
+          'Inversor híbrido incluido',
+          'Trámite ante CFE',
+        ]}
+      />
+      <PricingCard
+        panelCount={'6'}
+        receiptRange='$2,000 - $3,000'
+        price={'5,271'}
+        cashPrice={'55,000.00'}
+        features={[
+          'Paneles bifaciales de 645 W',
+          'Inversor híbrido incluido',
+          'Trámite ante CFE',
+        ]}
+      />
+      <PricingCard
+        panelCount={'8'}
+        receiptRange='$3,000 - $4,000'
+        price={'6,229'}
+        cashPrice={'65,000.00'}
+        features={[
+          'Paneles bifaciales de 645 W',
+          'Inversor híbrido incluido',
+          'Trámite ante CFE',
+        ]}
+        popular={true}
+      />
+      <PricingCard
+        panelCount={'10'}
+        receiptRange='$4,000 - $5,500'
+        price={'7,667'}
+        cashPrice={'80,000.00'}
+        features={[
+          'Paneles bifaciales de 645 W',
+          'Inversor híbrido incluido',
+          'Trámite ante CFE',
+        ]}
+      />
+      <PricingCard
+        panelCount={'12'}
+        receiptRange='$5,500 - $7,000'
+        price={'8,625'}
+        cashPrice={'90,000.00'}
+        features={[
+          'Paneles bifaciales de 645 W',
+          'Inversor híbrido incluido',
+          'Trámite ante CFE',
+        ]}
+      />
+    </div>
+  </div>
+</section>

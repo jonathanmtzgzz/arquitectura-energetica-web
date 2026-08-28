@@ -1,0 +1,29 @@
+---
+import FileTextIcon from '@/assets/svg/file-text.svg';
+import EngineerWorkerIcon from '@/assets/svg/engineer-worker.svg';
+import ToolsCircleIcon from '@/assets/svg/tools-circle.svg';
+import ChartLineIcon from '@/assets/svg/chart-line.svg';
+import FeatureCard from '@/components/FeatureCard.astro';
+---
+
+<section class='bg-[#FCF9F8] py-30'>
+  <div class='flex flex-col items-center justify-center gap-16 px-5'>
+    <h2 class='text-primary text-base leading-6 tracking-[-0.4px] uppercase'>
+      ¿Qué incluye tu inversión?
+    </h2>
+    <div class='flex w-87.5 flex-col gap-6 text-center'>
+      <FeatureCard description='Trámite de interconexión ante CFE.'>
+        <FileTextIcon slot='icon' />
+      </FeatureCard>
+      <FeatureCard description='Instalación profesional del equipo.'>
+        <EngineerWorkerIcon slot='icon' />
+      </FeatureCard>
+      <FeatureCard description='Dos mantenimientos preventivos.'>
+        <ToolsCircleIcon slot='icon' />
+      </FeatureCard>
+      <FeatureCard description='Seguimiento detallado del rendimiento.'>
+        <ChartLineIcon slot='icon' />
+      </FeatureCard>
+    </div>
+  </div>
+</section>

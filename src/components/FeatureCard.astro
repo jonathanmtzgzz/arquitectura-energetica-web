@@ -1,0 +1,16 @@
+---
+interface Props {
+  description: string;
+}
+
+const { description } = Astro.props;
+---
+
+<article
+  class='timeline-view animate-fade-in-left animate-range-rapid flex flex-col items-center rounded-sm border border-solid border-[#DBDBDB] bg-white p-8'
+>
+  <span class='pb-6'><slot name='icon' /></span>
+  <h3 class='text-center text-base leading-7 text-black'>
+    {description}
+  </h3>
+</article>

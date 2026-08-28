@@ -1,0 +1,40 @@
+---
+const whatsappNumber = '5218134097847';
+const message = 'Hola, me interesa cotizar un plan para mi hogar.';
+const encodedMessage = encodeURIComponent(message);
+
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+---
+
+<section class='flex h-175.5 flex-col justify-around bg-[#003225]'>
+  <div class='flex h-100.25 flex-col items-center justify-center gap-12'>
+    <div class='flex flex-col gap-4'>
+      <h1
+        class='w-80 text-center text-[32px] leading-10 font-bold tracking-[3.2px] text-white uppercase'
+      >
+        Arquitectura Energética
+      </h1>
+      <h2
+        class='text-center text-2xl leading-8 font-light tracking-[-0.6px] text-white/80'
+      >
+        Invierte una vez, ahorra por años.
+      </h2>
+    </div>
+    <div class='flex w-80 flex-col items-center justify-around gap-2'>
+      <span
+        class='text-center text-lg leading-7 font-normal tracking-[1.8px] text-[#B3EFD7] uppercase'
+        >Ahorra hasta el 95% en tu recibo de luz</span
+      >
+      <span class='text-2xl leading-8 font-bold text-white'
+        >Instala desde <span class='text-[#97D3BC]'>$4,313</span> al mes</span
+      >
+      <a
+        href={whatsappUrl}
+        target='_blank'
+        rel='noopener noreferrer'
+        class='bg-primary hover:text-primary mt-6 w-[269.22px] rounded-xl px-8 py-4 text-center text-base leading-6 tracking-[0.8px] text-white uppercase hover:bg-white'
+        >Cotizar mi proyecto</a
+      >
+    </div>
+  </div>
+</section>
