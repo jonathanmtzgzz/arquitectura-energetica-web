@@ -7,11 +7,15 @@ import FeatureCard from '@/components/FeatureCard.astro';
 ---
 
 <section class='bg-[#FCF9F8] py-30'>
-  <div class='flex flex-col items-center justify-center gap-16 px-5'>
-    <h2 class='text-primary text-base leading-6 tracking-[-0.4px] uppercase'>
+  <div class='flex flex-col items-center justify-center gap-8 px-5 lg:gap-16'>
+    <h2
+      class='text-primary text-center text-base leading-6 tracking-[-0.4px] uppercase lg:text-[40px] lg:leading-12 lg:font-bold'
+    >
       ¿Qué incluye tu inversión?
     </h2>
-    <div class='flex w-87.5 flex-col gap-6 text-center'>
+    <div
+      class='flex w-87.5 flex-col gap-6 text-center lg:w-full lg:flex-row lg:justify-center'
+    >
       <FeatureCard description='Trámite de interconexión ante CFE.'>
         <FileTextIcon slot='icon' />
       </FeatureCard>

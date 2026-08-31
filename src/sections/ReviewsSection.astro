@@ -3,11 +3,15 @@ import ReviewCard from '@/components/ReviewCard.astro';
 ---
 
 <section class='flex flex-col items-center justify-center py-30'>
-  <div class='flex w-87.5 flex-col items-center justify-center gap-8 px-5'>
-    <h2 class='text-primary text-base leading-6 tracking-[-0.4px] uppercase'>
+  <div
+    class='flex w-87.5 flex-col items-center justify-center gap-8 px-5 lg:w-full lg:gap-16'
+  >
+    <h2
+      class='text-primary text-base leading-6 tracking-[-0.4px] uppercase lg:text-[40px] lg:leading-12 lg:font-bold'
+    >
       Instalaciones
     </h2>
-    <div class='flex flex-col gap-6'>
+    <div class='flex flex-col gap-6 lg:flex-row'>
       <ReviewCard
         rating='⭐⭐⭐⭐'
         review='"Excelente servicio, reduje mi recibo a $50 pesos. Recomendados"'

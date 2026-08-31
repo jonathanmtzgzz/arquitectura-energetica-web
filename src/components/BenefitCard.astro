@@ -5,12 +5,12 @@ interface Props {
   description: string;
 }
 
+// timeline-view animate-fade-in-right animate-range-rapid
+
 const { title, time, description } = Astro.props;
 ---
 
-<article
-  class='timeline-view animate-fade-in-right animate-range-rapid flex flex-col items-center justify-center p-6'
->
+<article class='flex flex-col items-center justify-start p-6 xl:w-95'>
   <span
     class='mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#97D3BC]/20'
     ><slot name='icon' /></span
@@ -21,7 +21,7 @@ const { title, time, description } = Astro.props;
   >
     {time}
   </h4>
-  <p class='px-3 text-center text-base leading-6 text-[#5D5F5F]'>
+  <p class='px-3 text-center text-base leading-6 text-[#5D5F5F] lg:text-lg'>
     {description}
   </p>
 </article>

@@ -7,11 +7,11 @@ interface Props {
 }
 
 const { title, details } = Astro.props as Props;
+
+// timeline-view animate-fade-in-down animate-range-rapid
 ---
 
-<div
-  class='accordion group timeline-view animate-fade-in-down animate-range-rapid relative rounded-md border border-[#DBDBDB]'
->
+<div class='accordion group relative rounded-md border border-[#DBDBDB]'>
   <button
     class='accordion__button bg-primary/10 flex w-full flex-1 items-center justify-between gap-2 p-3 text-left text-base leading-7 transition sm:px-4'
     type='button'
@@ -34,7 +34,7 @@ const { title, details } = Astro.props as Props;
     aria-labelledby={`${title} accordion menu button`}
     class='accordion__content hidden max-h-0 overflow-hidden bg-white px-3 transition-all duration-300 ease-in-out sm:px-4'
   >
-    <p class='prose mt-4 mb-4 max-w-sm transition-[height]'>
+    <p class='prose mt-4 mb-4 max-w-full hyphens-auto transition-[height]'>
       {details}
     </p>
   </div>

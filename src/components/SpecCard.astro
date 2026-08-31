@@ -4,17 +4,19 @@ interface Props {
   details: string;
 }
 
+// timeline-view animate-fade-in-right animate-range-rapid
+
 const { title, details } = Astro.props;
 ---
 
 <article
-  class='timeline-view animate-fade-in-right animate-range-rapid flex flex-col items-center rounded-sm border border-solid border-[#DBDBDB] p-8'
+  class='flex flex-col items-center rounded-sm border border-solid border-[#DBDBDB] p-8 xl:w-95'
 >
   <span class='pb-4'><slot name='icon' /></span>
   <h3 class='h-10 text-center text-2xl leading-8 font-bold text-black'>
     {title}
   </h3>
-  <p class='text-center text-base leading-6 text-[#5D5F5F]'>
+  <p class='text-center text-base leading-6 text-[#5D5F5F] lg:text-lg'>
     {details}
   </p>
 </article>

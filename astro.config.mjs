@@ -11,4 +11,5 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  site: "https://jonathanmtzgzz.github.io",
 });

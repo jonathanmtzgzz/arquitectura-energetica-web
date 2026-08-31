@@ -6,21 +6,21 @@ const encodedMessage = encodeURIComponent(message);
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 ---
 
-<section class='flex h-175.5 flex-col justify-around bg-[#003225]'>
-  <div class='flex h-100.25 flex-col items-center justify-center gap-12'>
+<section class='flex h-175.5 flex-col justify-around bg-[#003225] lg:h-180'>
+  <div class='flex flex-col items-center justify-center gap-12 px-5'>
     <div class='flex flex-col gap-4'>
       <h1
-        class='w-80 text-center text-[32px] leading-10 font-bold tracking-[3.2px] text-white uppercase'
+        class='w-80 text-center text-[32px] leading-10 font-bold tracking-[3.2px] text-white uppercase lg:w-full lg:text-[64px] lg:leading-18 lg:font-extrabold lg:tracking-[-1.28px]'
       >
         Arquitectura Energética
       </h1>
       <h2
-        class='text-center text-2xl leading-8 font-light tracking-[-0.6px] text-white/80'
+        class='text-center text-2xl leading-8 font-light tracking-[-0.6px] text-white/80 lg:text-[24px] lg:leading-8 lg:font-light lg:tracking-[-0.6px]'
       >
         Invierte una vez, ahorra por años.
       </h2>
     </div>
-    <div class='flex w-80 flex-col items-center justify-around gap-2'>
+    <div class='flex w-80 flex-col items-center justify-around gap-2 lg:w-full'>
       <span
         class='text-center text-lg leading-7 font-normal tracking-[1.8px] text-[#B3EFD7] uppercase'
         >Ahorra hasta el 95% en tu recibo de luz</span
