@@ -10,6 +10,8 @@ interface Props {
   popular?: boolean;
 }
 
+// timeline-view animate-zoom-in animate-range-rapid
+
 const {
   panelCount,
   receiptRange,
@@ -21,11 +23,21 @@ const {
 ---
 
 <article
-  class={`flex w-87.5 flex-col rounded-sm border border-solid border-[#DBDBDB] shadow-lg timeline-view animate-zoom-in animate-range-rapid ${
+  class={`flex flex-col rounded-lg border border-solid border-[#DBDBDB] shadow-lg  ${
     popular ? 'bg-[#074A39]' : 'bg-white'
   }`}
 >
-  <div class='flex h-48 items-center justify-center'>image</div>
+  <div class='relative flex h-48 items-center justify-center bg-lime-50'>
+    {
+      popular && (
+        <span class='text-primary absolute top-3 right-3 z-10 rounded-xl bg-white px-3 py-1 text-xs leading-4 font-medium'>
+          Más Popular
+        </span>
+      )
+    }
+
+    <div>image</div>
+  </div>
 
   <div class='gap-3 p-8'>
     <div class='pb-6'>
