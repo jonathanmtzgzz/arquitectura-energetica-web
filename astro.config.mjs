@@ -12,4 +12,5 @@ export default defineConfig({
     enabled: false,
   },
   site: "https://jonathanmtzgzz.github.io",
+  base: import.meta.env.PROD ? "/arquitectura-energetica-web" : "/",
 });
